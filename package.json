@@ -1,0 +1,62 @@
+{
+  "private": true,
+  "name": "web-preact",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "preact build --no-prerender",
+    "serve": "sirv build --cors --single",
+    "dev": "preact watch",
+    "lint": "eslint src",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "preact",
+    "ignorePatterns": [
+      "build/"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.10.1",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-plugin-import": "^1.13.1",
+    "babel-preset-preact": "^2.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-preact-pure": "^2.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-preact": "^1.1.0",
+    "jest": "^24.9.0",
+    "jest-preset-preact": "^1.0.0",
+    "node-sass": "^5.0.0",
+    "preact-cli": "^3.0.0",
+    "sass-loader": "^10.0.5",
+    "sirv-cli": "1.0.3",
+    "standard": "^16.0.1"
+  },
+  "dependencies": {
+    "antd": "^4.16.2",
+    "apisauce": "^2.0.0",
+    "dotenv": "^10.0.0",
+    "less": "^2.7.2",
+    "less-loader": "^7.3.0",
+    "lodash": "^4.17.20",
+    "mobx": "^5.15.4",
+    "mobx-preact": "^3.0.0",
+    "mobx-react-lite": "^2.2.2",
+    "moment": "^2.29.1",
+    "preact": "^10.3.2",
+    "preact-render-to-string": "^5.1.4",
+    "preact-router": "^3.2.1",
+    "react-hook-form": "^7.22.5",
+    "styled-components": "^5.3.0",
+    "universal-cookie": "^4.0.4"
+  },
+  "jest": {
+    "preset": "jest-preset-preact",
+    "setupFiles": [
+      "<rootDir>/tests/__mocks__/browserMocks.js",
+      "<rootDir>/tests/__mocks__/setupTests.js"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "preact-cli/babel",
+          {
+            "modules": "commonjs"
+          }
+        ]
+      ]
+    }
+  },
+  "presets": [
+    "preact"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": true
+      }
+    ]
+  ]
+}
